@@ -17,6 +17,7 @@ html, body {
 	margin: 0 auto;
 }
 .tablo {
+	padding-top: 0.25em;
 	text-align: center;
 }
 .hms, .mls {
@@ -50,7 +51,7 @@ html, body {
 	padding:  5px 24px;
 	width: 100px;
 	border: 2px solid #A6B250;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: black;
 	box-shadow: 0 0 5px #D8FF00;
 	color: #D8FF00;

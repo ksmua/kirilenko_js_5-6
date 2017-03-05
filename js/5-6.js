@@ -24,8 +24,8 @@ function timeWrite(){
 	  	var minutes = Math.floor((counter / 1000 / 60) % 60);
 	  	var hours = Math.floor((counter / (1000 * 60 * 60)) % 24);
 		
-		console.log('counter = ', counter);
-		console.log('date = ' + hours + ':' + minutes + ':' + seconds + ':' + milisec);
+		// console.log('counter = ', counter);
+		// console.log('date = ' + hours + ':' + minutes + ':' + seconds + ':' + milisec);
 	
 		spanMilisec.innerHTML = ('00' + milisec).slice(-3);
 		spanSeconds.innerHTML = ('0' + seconds).slice(-2);
@@ -38,26 +38,26 @@ function timeWrite(){
 
 function setLabelStart(){
 		bStart.innerHTML = ('START');
-		console.log("set label = start");
+		// console.log("set label = start");
 }
 
 function setLabelStop(){
 		bStart.innerHTML = ('STOP');	
-		console.log("set label = stop");
+		// console.log("set label = stop");
 }
 
 function NewTimer(){
 	var self = this;
 	self.run = function(){
-		console.log("timer - runing");
+		// console.log("timer - runing");
 		timerId = setInterval(timeWrite, 111);
 	}
 	self.stop = function(){
-		console.log("timer -stoped");
+		// console.log("timer -stoped");
 		clearInterval(timerId);
 	}
 	self.reset = function(){
-		console.log("timer - reseted");	
+		// console.log("timer - reseted");	
 		clearInterval(timerId);
 		timeWrite(1);
 		go = false;
