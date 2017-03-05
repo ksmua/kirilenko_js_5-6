@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+.wraper {
+	padding-top: 1em;
+}
+.timer {
+	width: 40%;
+	background: #06280A;
+	border: 10px solid black;
+	border-radius: 20px;
+	box-shadow: inset 0 0 10px #06A06A;
+	margin: 0 auto;
+}
+.tablo {
+	text-align: center;
+}
+.hms, .mls {
+	display: inline-block;
+}
+.hms {
+	font-family: "Liquid Crystal";
+	font-size: 5em;
+	font-weight: bold;
+	color: #06A06A;
+	text-shadow: 0 0 10px #06A06A;
+	width: 70%;
+	min-width: 70%;
+	outline-style: none;
+}
+.mls {
+	font-family: "Liquid Crystal";
+	font-size: 2em;
+	color: #06A06A;
+}
+#hours, #minutes, #seconds {
+	display: inline-block;
+	min-width: 1em;
+}
+.control{
+	display: flex;
+	justify-content: center;
+}
+#start, #reset {
+	margin: 0.5em 2em;
+	padding:  5px 24px;
+	width: 100px;
+	border: 2px solid #A6B250;
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 0 0 5px #D8FF00;
+	color: #D8FF00;
+}
+#start:hover, #reset:hover{
+	color:  #06A06A;
+	border: 2px solid #06A06A;
+	box-shadow: 0 0 10px #06A06A;
+}
+
+@font-face {
+    font-family: "Liquid Crystal";
+    src: url("../fonts/liquidcr.eot");
+    src: url("../fonts/liquidcr.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/liquidcr.woff") format("woff"),
+    url("../fonts/liquidcr.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
