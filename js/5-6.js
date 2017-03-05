@@ -19,7 +19,8 @@ function timeWrite(){
 		counter = 0;
 	}
 	else{
-	 	var milisec = counter;
+	 	
+		var milisec = counter;
 		var seconds = Math.floor((counter / 1000) % 60);
 	  	var minutes = Math.floor((counter / 1000 / 60) % 60);
 	  	var hours = Math.floor((counter / (1000 * 60 * 60)) % 24);
@@ -32,7 +33,7 @@ function timeWrite(){
 		spanMinutes.innerHTML = ('0' + minutes).slice(-2);
 		spanHours.innerHTML = ('0' + hours).slice(-2);
 		 
-		counter += 111;
+		counter +=111;
 	}
 }
 
